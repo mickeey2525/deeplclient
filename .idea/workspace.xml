@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="500cb613-70b9-42e8-b01d-bf9288deb644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    <list default="true" id="500cb613-70b9-42e8-b01d-bf9288deb644" name="Default Changelist" comment="Create README.md and add file mode">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplclient/deeplclient.go" beforeDir="false" afterPath="$PROJECT_DIR$/deeplclient/deeplclient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.2/libexec" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -20,10 +42,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -36,10 +60,15 @@
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deepl-client" />
       <working_directory value="$PROJECT_DIR$" />
+      <parameters value="e082f069-e5b0-de2c-c43f-95ce7944cb41" />
+      <envs>
+        <env name="DEEPL_APIKEY" value="e082f069-e5b0-de2c-c43f-95ce7944cb41" />
+      </envs>
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/mickeey2525/deepl-client" />
       <directory value="$PROJECT_DIR$" />
+      <output_directory value="$PROJECT_DIR$/../../../../bin" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -62,26 +91,70 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create README.md and add file mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create README.md and add file mode" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="202" key="GridCell.Tab.0.bottom" timestamp="1601636556003">
-      <screen x="-1920" y="23" width="1920" height="1005" />
+    <state x="520" y="375" key="#GOROOT" timestamp="1601638701014">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="520" y="375" key="#GOROOT/0.23.1440.831@0.23.1440.831" timestamp="1601638701014" />
+    <state x="520" y="279" key="#Go_Modules" timestamp="1601646717411">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="520" y="279" key="#Go_Modules/0.23.1440.831@0.23.1440.831" timestamp="1601646717411" />
+    <state x="184" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601780293936">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="184" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.831/-1920.-157.1920.1057@0.23.1440.831" timestamp="1601780293936" />
+    <state x="184" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.831@0.23.1440.831" timestamp="1601645926823" />
+    <state x="507" y="150" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601645507429">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="507" y="150" key="#com.intellij.ide.macro.MacrosDialog/0.23.1440.831@0.23.1440.831" timestamp="1601645507429" />
+    <state x="574" y="170" key="EnvironmentVariablesDialog" timestamp="1601645924458">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="574" y="170" key="EnvironmentVariablesDialog/0.23.1440.831@0.23.1440.831" timestamp="1601645924458" />
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom" timestamp="1601780451528">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1358" height="202" key="GridCell.Tab.0.bottom/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601631628125" />
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831/-1920.-157.1920.1057@0.23.1440.831" timestamp="1601780451528" />
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1601646911069" />
     <state width="1358" height="202" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.1005@-1920.23.1920.1005" timestamp="1601636556003" />
-    <state width="1358" height="202" key="GridCell.Tab.0.center" timestamp="1601636556002">
-      <screen x="-1920" y="23" width="1920" height="1005" />
+    <state width="1398" height="215" key="GridCell.Tab.0.center" timestamp="1601780451527">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1358" height="202" key="GridCell.Tab.0.center/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601631628124" />
+    <state width="1398" height="215" key="GridCell.Tab.0.center/0.23.1440.831/-1920.-157.1920.1057@0.23.1440.831" timestamp="1601780451527" />
+    <state width="1398" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1601646911069" />
     <state width="1358" height="202" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.1005@-1920.23.1920.1005" timestamp="1601636556002" />
-    <state width="1358" height="202" key="GridCell.Tab.0.left" timestamp="1601636556001">
-      <screen x="-1920" y="23" width="1920" height="1005" />
+    <state width="1398" height="215" key="GridCell.Tab.0.left" timestamp="1601780451526">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1358" height="202" key="GridCell.Tab.0.left/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601631628124" />
+    <state width="1398" height="215" key="GridCell.Tab.0.left/0.23.1440.831/-1920.-157.1920.1057@0.23.1440.831" timestamp="1601780451526" />
+    <state width="1398" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1601646911069" />
     <state width="1358" height="202" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.1005@-1920.23.1920.1005" timestamp="1601636556001" />
-    <state width="1358" height="202" key="GridCell.Tab.0.right" timestamp="1601636556002">
-      <screen x="-1920" y="23" width="1920" height="1005" />
+    <state width="1398" height="215" key="GridCell.Tab.0.right" timestamp="1601780451527">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1358" height="202" key="GridCell.Tab.0.right/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601631628125" />
+    <state width="1398" height="215" key="GridCell.Tab.0.right/0.23.1440.831/-1920.-157.1920.1057@0.23.1440.831" timestamp="1601780451527" />
+    <state width="1398" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1601646911069" />
     <state width="1358" height="202" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.1005@-1920.23.1920.1005" timestamp="1601636556002" />
   </component>
 </project>
