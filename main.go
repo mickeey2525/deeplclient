@@ -18,7 +18,7 @@ func main() {
 	var (
 		text       = flag.String("text", "", "You need to specify the target text")
 		filepath   = flag.String("filepath", "", "The text filepath you want to translate")
-		srcLang    = flag.String("srclang", "JA", "src language")
+		srcLang    = flag.String("srclang", "", "src language")
 		targetLang = flag.String("targetlang", "EN", "target language")
 	)
 

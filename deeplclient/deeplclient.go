@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"strings"
 )
 
 type deeplResponse struct {
@@ -38,11 +39,16 @@ func decodeBody(resp *http.Response, out interface{}) error {
 }
 
 func (dc *DeeplClient) TranslateText(texttarget, srclang, targetlang string) (*deeplResponse, error) {
+
+	textList := splitText(texttarget)
 	data := url.Values{
 		"auth_key":    {dc.Apikey},
-		"text":        {texttarget},
 		"source_lang": {srclang},
 		"target_lang": {targetlang},
+	}
+
+	for _, v := range textList {
+		data.Add("text", v)
 	}
 	resp, err := http.PostForm("https://api.deepl.com/v2/translate", data)
 	if err != nil {
@@ -65,17 +71,28 @@ func (dc *DeeplClient) TranslateText(texttarget, srclang, targetlang string) (*d
 	return &res, nil
 }
 
+func splitText(text string) []string {
+	textList := strings.Split(strings.Replace(text, "\r\n", "\n", -1), "\n")
+	return textList
+}
+
 func (dc *DeeplClient) TranslateFile(filepath, srclang, targetlang string) (*deeplResponse, error) {
 	file, err := ioutil.ReadFile(filepath)
 	if err != nil {
 		log.Fatalf("An Error happed during opening a file: %s", err)
 	}
-	var data = url.Values{
+
+	textList := splitText(string(file))
+	data := url.Values{
 		"auth_key":    {dc.Apikey},
-		"text":        {string(file)},
 		"source_lang": {srclang},
 		"target_lang": {targetlang},
 	}
+
+	for _, v := range textList {
+		data.Add("text", v)
+	}
+
 	resp, err := http.PostForm("https://api.deepl.com/v2/translate", data)
 	if err != nil {
 		log.Fatalf("an error happed during calling the function %s", err)
