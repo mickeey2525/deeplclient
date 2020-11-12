@@ -43,7 +43,7 @@ func main() {
 		}
 		src, err := json.Marshal(translated)
 		if err != nil {
-			log.Fatalf("Error happed during convert to JSON")
+			log.Fatalf("Error happned during convert to JSON")
 		}
 		fmt.Printf("%s", src)
 	}

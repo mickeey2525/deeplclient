@@ -52,7 +52,7 @@ func (dc *DeeplClient) TranslateText(texttarget, srclang, targetlang string) (*d
 	}
 	resp, err := http.PostForm("https://api.deepl.com/v2/translate", data)
 	if err != nil {
-		log.Fatalf("an error happed during calling the function %s", err)
+		log.Fatalf("an error happed during calling the function %ss", err)
 		return nil, err
 	}
 	defer func() {
@@ -101,7 +101,7 @@ func (dc *DeeplClient) TranslateFile(filepath, srclang, targetlang string) (*dee
 	defer func() {
 		err := resp.Body.Close()
 		if err != nil {
-			log.Println("can't close body!!", err)
+			log.Println("can't close http connection!!", err)
 		}
 	}()
 	if resp.StatusCode != 200 {
@@ -109,6 +109,7 @@ func (dc *DeeplClient) TranslateFile(filepath, srclang, targetlang string) (*dee
 	}
 	var res deeplResponse
 	if err := decodeBody(resp, &res); err != nil {
+		log.Fatalf("Something went wrong during decode the reponce body. The error message is %s", err)
 		return nil, err
 	}
 	return &res, nil
